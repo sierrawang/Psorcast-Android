@@ -1,4 +1,4 @@
-package org.sagebionetworks.research.psorcast
+package org.sagebionetworks.research.psorcast.validation
 
 import org.junit.Test
 

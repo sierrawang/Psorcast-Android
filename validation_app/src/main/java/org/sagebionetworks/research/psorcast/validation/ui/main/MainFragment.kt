@@ -1,4 +1,4 @@
-package org.sagebionetworks.research.psorcast.ui.main
+package org.sagebionetworks.research.psorcast.validation.ui.main
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import org.sagebionetworks.research.psorcast.R
+import org.sagebionetworks.research.psorcast.validation.R
 
 class MainFragment : Fragment() {
 

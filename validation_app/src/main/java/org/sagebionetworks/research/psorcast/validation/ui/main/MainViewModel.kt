@@ -1,4 +1,4 @@
-package org.sagebionetworks.research.psorcast.ui.main
+package org.sagebionetworks.research.psorcast.validation.ui.main
 
 import androidx.lifecycle.ViewModel
 

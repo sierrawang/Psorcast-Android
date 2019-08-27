@@ -1,4 +1,4 @@
-package org.sagebionetworks.research.psorcast
+package org.sagebionetworks.research.psorcast.validation
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

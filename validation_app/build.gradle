@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "org.sagebionetworks.research.psorcast"
+        applicationId "org.sagebionetworks.research.psorcast.validation"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1

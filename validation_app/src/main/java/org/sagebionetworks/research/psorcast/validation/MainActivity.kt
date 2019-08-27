@@ -1,8 +1,8 @@
-package org.sagebionetworks.research.psorcast
+package org.sagebionetworks.research.psorcast.validation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import org.sagebionetworks.research.psorcast.ui.main.MainFragment
+import org.sagebionetworks.research.psorcast.validation.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

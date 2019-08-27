@@ -1,2 +1,2 @@
-include ':app'
+include ':validation_app'
 rootProject.name='Psorcast'
