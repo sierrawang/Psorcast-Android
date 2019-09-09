@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Psorcast</string>
+    <string name="app_name">Psorcast Validation Android</string>
+    <string name="osb_study_id">psorcast-validation-android</string>
+    <string name="osb_study_name">Psorcast Validation Android</string>
 </resources>
