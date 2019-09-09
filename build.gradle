@@ -17,9 +17,10 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url 'http://repo-maven.sagebridge.org/' }
+
         google()
         jcenter()
-        
     }
 }
 
