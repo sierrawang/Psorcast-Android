@@ -1,32 +1,39 @@
 package org.sagebionetworks.research.psorcast.validation.ui.main
 
-import androidx.lifecycle.ViewModelProviders
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import org.sagebionetworks.bridge.android.access.BridgeAccessFragment
 import org.sagebionetworks.research.psorcast.validation.R
+import org.sagebionetworks.research.psorcast.validation.ui.researcher_sign_in.ResearcherSignInFragment
+import org.sagebionetworks.research.psorcast.validation.ui.task_list.TaskListFragment
+import org.slf4j.LoggerFactory
 
-class MainFragment : Fragment() {
+class MainFragment : BridgeAccessFragment() {
 
     companion object {
         fun newInstance() = MainFragment()
+
+        private val LOGGER = LoggerFactory.getLogger(MainFragment::class.java)
     }
 
-    private lateinit var viewModel: MainViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        return inflater.inflate(R.layout.main_fragment, container, false)
+    override fun onAccessGranted() {
+        childFragmentManager.beginTransaction()
+            .replace(R.id.container, TaskListFragment())
+            .commit()
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onRequireAuthentication() {
+        LOGGER.debug("Authentication required: showing ResearcherSignInFragment")
+
+        val fragment = childFragmentManager.findFragmentByTag("ResearcherSignInFragment")
+        if (fragment?.isVisible == true ) {
+            return
+        }
+        childFragmentManager.beginTransaction()
+            .replace(R.id.container, ResearcherSignInFragment.newInstance(), "ResearcherSignInFragment")
+            .commit()
+    }
+
+    override fun onRequireConsent() {
+        TODO("not implemented")
     }
 
 }

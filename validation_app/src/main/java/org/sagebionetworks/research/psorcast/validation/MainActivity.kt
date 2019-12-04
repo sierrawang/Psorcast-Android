@@ -1,10 +1,10 @@
 package org.sagebionetworks.research.psorcast.validation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import dagger.android.support.DaggerAppCompatActivity
 import org.sagebionetworks.research.psorcast.validation.ui.main.MainFragment
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,5 +15,4 @@ class MainActivity : AppCompatActivity() {
                 .commitNow()
         }
     }
-
 }
