@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_task_list.*
 import org.sagebionetworks.research.domain.repository.TaskRepository
@@ -22,19 +24,23 @@ class TaskListFragment : DaggerFragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_task_list, container, false)
-    }
+        var result = inflater.inflate(R.layout.fragment_task_list, container, false)
 
-    override fun onStart() {
-        super.onStart()
-
-        body_plaque_coverage.setOnClickListener {
-            launchTask("PlaquesBodyMap", UUID.randomUUID())
+        val recyclerView = result.findViewById<RecyclerView>(R.id.recycler_view)
+        recyclerView.layoutManager = GridLayoutManager(context, 1)
+        val tasks = listOf(TaskItem("30 Second Walk", "1 minute", "Walk30Seconds"),
+            TaskItem("Psoriasis Area Photo", "1 minute", "PsoriasisAreaPhoto"),
+            TaskItem("Psoriasis Draw", "2 minutes", "PsoriasisDraw"),
+            TaskItem("Painful Joint Count", "2 minutes", "PainfulJointCount"),
+            TaskItem("Fingers Photo", "1 minute", "FingersPhoto"),
+            TaskItem("Toes Photo", "1 minute", "ToesPhoto"),
+            TaskItem("(For Dr.) Painful Joints", "1 minute", "PainfulJointsDoctor"),
+            TaskItem("(For Dr.) Swollen Joints", "1 minute", "SwollenJointsDoctor"))
+        recyclerView.adapter = TaskListAdapter(tasks) {
+            launchTask(it.taskIdentifier, UUID.randomUUID())
         }
 
-        joint_pain.setOnClickListener {
-            launchTask("JointPain", UUID.randomUUID())
-        }
+        return result
     }
 
     private fun launchTask(

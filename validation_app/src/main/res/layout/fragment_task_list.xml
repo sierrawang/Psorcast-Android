@@ -4,27 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.sagebionetworks.research.psorcast.validation.ui.task_list.TaskListFragment">
+    tools:context="org.sagebionetworks.research.psorcast.validation.ui.task_list.TaskListFragment"
+    android:background="@color/colorPrimary">
 
-
-    <Button
-        android:id="@+id/body_plaque_coverage"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Body plaque coverage"
-        app:layout_constraintBottom_toTopOf="@id/joint_pain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/psorcast_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="38dp"/>
 
-    <Button
-        android:id="@+id/joint_pain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Joint pain"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/body_plaque_coverage" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

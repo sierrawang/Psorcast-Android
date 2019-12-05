@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Psorcast.iml" filepath="$PROJECT_DIR$/Psorcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Psorcast-Android-Psorcast.iml" filepath="$PROJECT_DIR$/Psorcast-Android-Psorcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/validation_app/Psorcast-Android-validation_app.iml" filepath="$PROJECT_DIR$/validation_app/Psorcast-Android-validation_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/validation_app/validation_app.iml" filepath="$PROJECT_DIR$/validation_app/validation_app.iml" />
     </modules>
   </component>
