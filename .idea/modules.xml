@@ -5,6 +5,18 @@
       <module fileurl="file://$PROJECT_DIR$/Psorcast.iml" filepath="$PROJECT_DIR$/Psorcast.iml" />
       <module fileurl="file://$PROJECT_DIR$/Psorcast-Android-Psorcast.iml" filepath="$PROJECT_DIR$/Psorcast-Android-Psorcast.iml" />
       <module fileurl="file://$PROJECT_DIR$/validation_app/Psorcast-Android-validation_app.iml" filepath="$PROJECT_DIR$/validation_app/Psorcast-Android-validation_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ResearchModules-Android/ResearchModules-Android.iml" filepath="$PROJECT_DIR$/../ResearchModules-Android/ResearchModules-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SageResearch-Android/SageResearch-Android.iml" filepath="$PROJECT_DIR$/../SageResearch-Android/SageResearch-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SageResearch-Android/app/app.iml" filepath="$PROJECT_DIR$/../SageResearch-Android/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ResearchModules-Android/common/common.iml" filepath="$PROJECT_DIR$/../ResearchModules-Android/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SageResearch-Android/data/data.iml" filepath="$PROJECT_DIR$/../SageResearch-Android/data/data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SageResearch-Android/domain/domain.iml" filepath="$PROJECT_DIR$/../SageResearch-Android/domain/domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SageResearch-Android/mobile-ui/mobile-ui.iml" filepath="$PROJECT_DIR$/../SageResearch-Android/mobile-ui/mobile-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ResearchModules-Android/motor-control/motor-control.iml" filepath="$PROJECT_DIR$/../ResearchModules-Android/motor-control/motor-control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ResearchModules-Android/motor-control-test-app/motor-control-test-app.iml" filepath="$PROJECT_DIR$/../ResearchModules-Android/motor-control-test-app/motor-control-test-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SageResearch-Android/presentation/presentation.iml" filepath="$PROJECT_DIR$/../SageResearch-Android/presentation/presentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ResearchModules-Android/psorcast/psorcast.iml" filepath="$PROJECT_DIR$/../ResearchModules-Android/psorcast/psorcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ResearchModules-Android/psorcast-test-app/psorcast-test-app.iml" filepath="$PROJECT_DIR$/../ResearchModules-Android/psorcast-test-app/psorcast-test-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/validation_app/validation_app.iml" filepath="$PROJECT_DIR$/validation_app/validation_app.iml" />
     </modules>
   </component>

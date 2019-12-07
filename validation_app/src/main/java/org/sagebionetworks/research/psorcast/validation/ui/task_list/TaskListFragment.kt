@@ -29,13 +29,13 @@ class TaskListFragment : DaggerFragment() {
         val recyclerView = result.findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.layoutManager = GridLayoutManager(context, 1)
         val tasks = listOf(TaskItem("30 Second Walk", "1 minute", "Walk30Seconds"),
-            TaskItem("Psoriasis Area Photo", "1 minute", "PsoriasisAreaPhoto"),
-            TaskItem("Psoriasis Draw", "2 minutes", "PsoriasisDraw"),
-            TaskItem("Painful Joint Count", "2 minutes", "PainfulJointCount"),
-            TaskItem("Fingers Photo", "1 minute", "FingersPhoto"),
-            TaskItem("Toes Photo", "1 minute", "ToesPhoto"),
-            TaskItem("(For Dr.) Painful Joints", "1 minute", "PainfulJointsDoctor"),
-            TaskItem("(For Dr.) Swollen Joints", "1 minute", "SwollenJointsDoctor"))
+            TaskItem("Psoriasis Area Photo", "1 minute", "AreaPhoto"),
+            TaskItem("Psoriasis Draw", "2 minutes", "PlaquesBodyMap"),
+            TaskItem("Painful Joint Count", "2 minutes", "JointPain"),
+            TaskItem("Fingers Photo", "1 minute", "JointPhotographyHands"),
+            TaskItem("Toes Photo", "1 minute", "JointPhotographyFeet"),
+            TaskItem("(For Dr.) Painful Joints", "1 minute", "JointPain"),
+            TaskItem("(For Dr.) Swollen Joints", "1 minute", "JointPain"))
         recyclerView.adapter = TaskListAdapter(tasks) {
             launchTask(it.taskIdentifier, UUID.randomUUID())
         }

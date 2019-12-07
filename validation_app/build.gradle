@@ -8,7 +8,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "org.sagebionetworks.research.psorcast.validation"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -40,6 +40,7 @@ dependencies {
     implementation "org.sagebionetworks.bridge:sageresearch-app-sdk:$bridge_sdk_version"
     implementation "org.sagebionetworks.bridge:android-sdk:$bridge_sdk_version"
     implementation "org.sagebionetworks.research.modules:psorcast:$sage_research_modules_version"
+    implementation "org.sagebionetworks.research.modules:motor-control:$sage_research_modules_version"
 
     implementation "org.sagebionetworks.research:data:$sage_research_version"
     implementation "org.sagebionetworks.research:mobile-ui:$sage_research_version"
