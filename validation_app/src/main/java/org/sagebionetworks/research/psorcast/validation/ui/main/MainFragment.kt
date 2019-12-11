@@ -2,6 +2,7 @@ package org.sagebionetworks.research.psorcast.validation.ui.main
 
 import org.sagebionetworks.bridge.android.access.BridgeAccessFragment
 import org.sagebionetworks.research.psorcast.validation.R
+import org.sagebionetworks.research.psorcast.validation.ui.participant_id.ParticipantIdFragment
 import org.sagebionetworks.research.psorcast.validation.ui.researcher_sign_in.ResearcherSignInFragment
 import org.sagebionetworks.research.psorcast.validation.ui.task_list.TaskListFragment
 import org.slf4j.LoggerFactory
@@ -16,7 +17,7 @@ class MainFragment : BridgeAccessFragment() {
 
     override fun onAccessGranted() {
         childFragmentManager.beginTransaction()
-            .replace(R.id.container, TaskListFragment())
+            .replace(R.id.container, ParticipantIdFragment())
             .commit()
     }
 

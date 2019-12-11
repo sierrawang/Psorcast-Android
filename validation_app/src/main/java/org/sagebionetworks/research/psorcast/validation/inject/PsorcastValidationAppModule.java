@@ -9,6 +9,7 @@ import org.sagebionetworks.research.mobile_ui.perform_task.PerformTaskFragment;
 import org.sagebionetworks.research.modules.psorcast.inject.PsorcastShowStepFragmentsModule;
 import org.sagebionetworks.research.psorcast.validation.MainActivity;
 import org.sagebionetworks.research.psorcast.validation.ui.main.MainFragment;
+import org.sagebionetworks.research.psorcast.validation.ui.participant_id.ParticipantIdFragment;
 import org.sagebionetworks.research.psorcast.validation.ui.researcher_sign_in.ResearcherSignInFragment;
 import org.sagebionetworks.research.psorcast.validation.ui.task_list.TaskListFragment;
 import org.sagebionetworks.research.sageresearch_app_sdk.archive.AbstractResultArchiveFactory;
@@ -33,6 +34,9 @@ public abstract class PsorcastValidationAppModule {
 
     @ContributesAndroidInjector
     abstract ResearcherSignInFragment contributesResearcherSignInFragmentInjector();
+
+    @ContributesAndroidInjector
+    abstract ParticipantIdFragment contributesParticipantIdFragmentInjector();
 
     @ContributesAndroidInjector
     abstract PerformTaskActivity contributePerformTaskActivityInjector();

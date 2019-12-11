@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Psorcast.iml" filepath="$PROJECT_DIR$/Psorcast.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Psorcast-Android-Psorcast.iml" filepath="$PROJECT_DIR$/Psorcast-Android-Psorcast.iml" />
-      <module fileurl="file://$PROJECT_DIR$/validation_app/Psorcast-Android-validation_app.iml" filepath="$PROJECT_DIR$/validation_app/Psorcast-Android-validation_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ResearchModules-Android/ResearchModules-Android.iml" filepath="$PROJECT_DIR$/../ResearchModules-Android/ResearchModules-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SageResearch-Android/SageResearch-Android.iml" filepath="$PROJECT_DIR$/../SageResearch-Android/SageResearch-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SageResearch-Android/app/app.iml" filepath="$PROJECT_DIR$/../SageResearch-Android/app/app.iml" />
